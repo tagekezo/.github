@@ -3,23 +3,23 @@
 
 #  Open Hackathons Official Training Materials
 
-The Open Hackathons program presents a unique opportunity for scientists, researchers, and developers to build collaborations and learn the hands-on skills needed to accelerate and optimize their applications using a variety of programming models, libraries and tools. Currently, we offer two types of events: Hackathons and Bootcamps.
+The Open Hackathons program presents a unique opportunity for scientists, researchers, and developers to build collaborations and learn the hands-on skills needed to accelerate and optimize their applications using a variety of programming models, libraries, and tools. Currently, we offer two types of events: Hackathons and Bootcamps.
 
 Bootcamps are designed to help build confidence and eventually prepare developers to participate in [Hackathons](http://openhackathons.org/)
-This repository contains bootcamp material for high performance computing (HPC), Artificial Intelligence (AI), and convergence of both.
+This repository contains bootcamp material for high performance computing (HPC), Artificial Intelligence (AI), and the convergence of both.
 
 - __HPC__ :: 
-This bootcamp content focuses on how to follow the “Analyze, Parallelize, and Optimize” cycle to write parallel codes using different parallel programming models for accelerating HPC simulations.
+This bootcamp content focuses on how to follow the “Analyze, Parallelize, and Optimize” cycle to write parallel code using different parallel programming models for accelerating HPC simulations.
 
 | Lab      | Description |
 | ----------- | ----------- |
-| [N-Ways](https://github.com/openhackathons-org/nways_accelerated_programming)      | This Bootcamp will cover multiple GPU programming models and choose the one that best fits your needs. The material supports different programming langauges including C ( CUDA C, OpenACC C, OpenMP C, C++ stdpar ),  Fortran ( CUDA Fortran, OpenACC Fortran, OpenMP Fortran, ISO DO CONCURRENT ) Python ( Numba, CuPy )       |
-| [HPC Profiler](https://github.com/openhackathons-org/HPC_Profiler)  | This repository contains learning materials and exercises for NVIDIA Nsight Tools. Goal is to learn how to profile your application with NVIDIA Nsight Systems,Compute and NVTX API calls to find performance limiters and bottlenecks and apply incremental parallelization strategies |
-| [C++ Standard Parallelism](https://github.com/openhackathons-org/cpp_hpc_tutorial)  | This repository contains learning materials and exercises for C++ Standard Parallelism. The content covers step by steps of accelerating a portable HPC application with CPUs and GPUs using the parallelism and concurrency features of the C++17 and C++20 standards. Goal is to learn about C++ concurrency features like threads, atomics, barriers, and parallel algorithms. This forked content has been tested. The owners of the material are Gonzalo Brito and Jonas Latt|
+| [N-Ways](https://github.com/openhackathons-org/nways_accelerated_programming)      | This Bootcamp will cover multiple GPU programming models and choose the one that best fits your needs. The material supports different programming ,languages including C ( CUDA C, OpenACC C, OpenMP C, C++ stdpar ),  Fortran ( CUDA Fortran, OpenACC Fortran, OpenMP Fortran, ISO DO CONCURRENT ) Python ( Numba, CuPy )       |
+| [HPC Profiler](https://github.com/openhackathons-org/HPC_Profiler)  | This repository contains learning materials and exercises for NVIDIA Nsight Tools. Goal is to learn how to profile your application with NVIDIA Nsight Systems, Comput,e and NVTX API calls to find performance limiters and bottlenecks and apply incremental parallelization strategies |
+| [C++ Standard Parallelism](https://github.com/openhackathons-org/cpp_hpc_tutorial)  | This repository contains learning materials and exercises for C++ Standard Parallelism. The content covers the step-by-step process of accelerating a portable HPC application with CPUs and GPUs using the parallelism and concurrency features of the C++17 and C++20 standards. The goal is to learn about C++ concurrency features like threads, atomics, barriers, and parallel algorithms. This forked content has been tested. The owners of the material are Gonzalo Brito and Jonas Latt|
 
 
 - __Convergence of HPC and AI__ :: 
-The bootcamp content focuses on how AI can accelerate HPC simulations by introducing concepts of Deep Neural Networks, including Physics Informed Neural Networks, neural operators and techniques to visualise physically acccurate outputs from the trained models. 
+The bootcamp content focuses on how AI can accelerate HPC simulations by introducing concepts of Deep Neural Networks, including Physics Informed Neural Networks, neural operators and techniques to visualise physically accurate outputs from the trained models. 
 
 | Lab      | Description |
 | ----------- | ----------- |
@@ -27,31 +27,30 @@ The bootcamp content focuses on how AI can accelerate HPC simulations by introdu
 
 
 - __AI__ ::
-The bootcamp content focuses on using popular accelerated AI frameworks and using optimization techniques to get max performance from accelerators like GPU.
+The bootcamp content focuses on using popular accelerated AI frameworks and using optimization techniques to get maximum performance from accelerators like GPUs.
 
 
 | Lab      | Description |
 | ----------- | ----------- |
-| [AI Profiler](https://github.com/openhackathons-org/AI-Profiler)   | Learn how optimizing a Deep Neural Network (DNN) training  using profiling tools   |
-| NeMo Challenge Bootcamp | Comming Soon. |
+| [AI Profiler](https://github.com/openhackathons-org/AI-Profiler)   | Learn how to optimize a Deep Neural Network (DNN) training  using profiling tools   |
 | [NIM Bootcamp](https://github.com/openhackathons-org/NIM-Bootcamp) | The NVIDIA NIM bootcamp is designed to help developers get started with NVIDIA® NIM™ microservices by building real-world GenAI applications. The labs guide participants through setting up NIM Docker containers and utilizing REST API endpoints for serving inference requests. Additionally, attendees will explore fine-tuning models using Parameter Efficient Fine-Tuning (PEFT) techniques such as LoRA, with hands-on experience in fine-tuning adapters for the LLaMA-3 8B model. |
 
 
 # System Requirements
-Each repository contains docker/singularity/conda definition files. Follow the readme files inside each on how to build the container and run the labs inside it.
+Each repository contains docker/singularity/conda definition files. Follow the README files inside each on how to build the container and run the labs inside it.
 
 # Contribution
-- The repository uses Apache 2.0 license. For more details on folder structure developers may refer to CONTRIBUTING.md file.
+- The repository uses the Apache 2.0 license. For more details on folder structure, developers may refer to the CONTRIBUTING.md file.
 
 # Feature Request or filing issues
-- Bootcamp users may request for newer training material or file a bug by filing a github issues
-- Please do go through the existing list of issues to get more details of upcoming features and bugs currently being fixed)
+- Bootcamp users may request newer training material or file a bug by filing a GitHub issue
+- Please do go through the existing list of issues to get more details of upcoming features and bugs currently being fixed.
 
 ## General Troubleshooting
 
-- All materials developed are tested with latest GPU Architectures (V100, A100). Most labs unless specified explicitly are expected to work even on older GPU architectures and with lesser compute and memory capacity like the one present even in laptops. There will be change in performance results observed based on GPU used. In case you see any issue using the material on other GPU please file an issue in Github mentioning the details of GPU and CUDA Driver version installed.
-- The material developed are tested inside container environment like Docker and Singularity. In case the users don't have container environment in the cluster, they can explicitly look at the steps mentioned in the Dockerfile and Singularity scripts and install the dependenciesmanually.
-- Most bootcamps are jupyter based and by default the Dockerfile and Singularity script runs the jupyter notebook at port 8888. In a munti-tenancy environment the admins are requested to explicitly map the ports to individual users else will result into port conflict issues. We recommend having installations of interactive interface to remote computing resources like [Open OnDemand](https://openondemand.org/) or [JupyterHub](https://jupyter.org/hub) coupled with scheduler (SLURM, Kubernetes etc ) to do these resources mapping automatically. 
+- All materials developed are tested with the latest GPU Architectures (V100, A100). Most labs, unless specified explicitly, are expected to work even on older GPU architectures and with lesser compute and memory capacity, like the one present even in laptops. There will be a change in performance results observed based on the GPU used. In case you see any issue using the material on another GPU, please file an issue in GitHub mentioning the details of the GPU and the CUDA Driver version installed.
+- The material developed is tested inside a container environment, like Docker and Apptainer. In case the users don't have a container environment in the cluster, they can explicitly look at the steps mentioned in the Dockerfile and Singularity scripts and install the dependencies manually.
+- Most bootcamps are jupyter based and by default, the Dockerfile and Singularity script run the Jupyter notebook at port 8888. In a multi-tenancy environment, the admins are requested to explicitly map the ports to individual users; else will result in port conflict issues. We recommend having installations of interactive interfaces to remote computing resources like [Open OnDemand](https://openondemand.org/) or [JupyterHub](https://jupyter.org/hub) coupled with a scheduler (SLURM, Kubernetes, etc ) to automatically map these resources. 
 
 ## Join OpenACC Community
 Please join [OpenACC Slack Channel](https://openacclang.slack.com/messages/openaccusergroup).
