@@ -33,7 +33,7 @@ The bootcamp content focuses on using popular accelerated AI frameworks and usin
 | Lab      | Description |
 | ----------- | ----------- |
 | [AI Profiler](https://github.com/openhackathons-org/AI-Profiler)   | Learn how to optimize a Deep Neural Network (DNN) training  using profiling tools   |
-| [NVIDIA NIM Bootcamp](https://github.com/openhackathons-org/NIM-Bootcamp) | The NVIDIA NIM bootcamp is designed to help developers get started with NVIDIA® NIM™ microservices by building real-world GenAI applications. The labs guide participants through setting up NIM Docker containers and utilizing REST API endpoints for serving inference requests. Additionally, attendees will explore fine-tuning models using Parameter Efficient Fine-Tuning (PEFT) techniques such as LoRA, with hands-on experience in fine-tuning adapters for the LLaMA-3 8B model. |
+| [NVIDIA NIM Bootcamp](https://github.com/openhackathons-org/NIM-Bootcamp) | The NVIDIA NIM bootcamp is designed to help developers get started with NVIDIA® NIM™ microservices by building real-world GenAI applications. The labs guide participants through setting up NIM Docker containers and utilizing REST API endpoints for serving inference requests. Additionally, attendees will explore fine-tuning models using Parameter Efficient Fine-Tuning (PEFT) techniques such as LoRA, with hands-on experience in fine-tuning adapters for the LLaMA-3 8B model. Participants will also utilise multimodal NIM and put multiple NIM in agentic workflows using LangGraph. The bootcamp gives a hands-on overview of deploying NIM Blueprints. |
 
 
 # System Requirements
